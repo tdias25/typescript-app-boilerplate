@@ -1,7 +1,11 @@
 export default class Post {
-    title: string;
+    private title: string;
 
-    constructor({title}) {
+    constructor({ title }) {
         this.title = title
+    }
+
+    public getTitle() {
+        return this.title;
     }
 }

@@ -19,7 +19,7 @@ export default class CreatePost {
 
         let Post = PostService.makePostFromRequest(request)
 
-        return await new response({
+        return await response({
             headers: {
                 'content-type': 'application/json'
             }
